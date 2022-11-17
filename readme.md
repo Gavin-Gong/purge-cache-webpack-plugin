@@ -2,12 +2,17 @@
 
 ## Why PurgeCacheWebpackPlugin?
 
-webpack won't purge oudateed filesystem cache files, though we have set `maxAge` in webpack config.
+webpack won't purge oudateed filesystem cache files, although we have set `maxAge` in webpack config.
 This plugin provide a workaround to resolve this [issue](https://github.com/webpack/webpack/issues/13291).
 
 ## Usage
 
+```bash
+npm i purge-cache-webpack-plugin -D
+```
+
 ```js
+// webpack config
 /** @type {import('webpack').Configuration}*/
 const config = {
   cache: {
