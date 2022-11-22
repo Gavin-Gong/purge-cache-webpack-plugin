@@ -13,6 +13,8 @@ npm i purge-cache-webpack-plugin -D
 
 ```js
 // webpack config
+const PurgeCacheWebpackPlugin = require("purge-cache-webpack-plugin")
+
 /** @type {import('webpack').Configuration}*/
 const config = {
   cache: {
